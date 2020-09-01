@@ -13,7 +13,7 @@
   padding-bottom: 15px;
   padding: 15px;
 }
-.messageSender_top>form {
+.messageSender_top > form {
 flex: 1;
 display: flex;
 }
@@ -28,6 +28,9 @@ display: flex;
 }
 .messageSender_top > form > button{
   display: none;
+}
+.messageSender_input{
+  flex:1 ;
 }
 .messageSender_bottom{
   display:flex;

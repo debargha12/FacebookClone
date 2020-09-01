@@ -9,12 +9,14 @@ import ChatIcon from '@material-ui/icons/Chat';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import {useStateValue} from "./StateProvider";
 
 
 function Sidebar(){
+    const [{user},dispatch] = useStateValue();
   return (
       <div className="sidebar">
-      <SidebarRow src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg" title="Debargha Ghosh" />
+      <SidebarRow src={user.photoURL} title={user.displayName} />
       <SidebarRow Icon = {LocalHospitalIcon} title="COVID-19 Information Center" />
       <SidebarRow Icon = {EmojiFlagsIcon} title="Pages" />
       <SidebarRow Icon = {ChatIcon} title="Messenger" />
