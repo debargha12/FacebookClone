@@ -1,4 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Facebook Clone is hosted on https://clone-336f5.web.app/
+The login is done using Firebase Google Authentication so it is safe.
 
 ## Available Scripts
 
